@@ -43,9 +43,9 @@ function Navigation() {
             showConfirmButton: false,
             timer: 1500
           })
-          }
-        })
-        // await logout();
+        }
+      })
+      // await logout();
       // await logout();
       // console.log(currentUser);
     } catch (error) {
@@ -56,8 +56,12 @@ function Navigation() {
   return (
     <div>
       <Navbar bg="light" expand="md">
-        <Container>
-          <Navbar.Brand>Wiki</Navbar.Brand>
+        <Container className="justify-content-between">
+          <Navbar.Brand>
+            <Link className="nav-link text-dark" to="/home">
+              <a>Wiki</a>
+            </Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Form className="d-flex">
@@ -72,17 +76,17 @@ function Navigation() {
               </Button>
             </Form>
 
-            <Nav className="me-auto ">
-            <Link className="nav-link" to="/home">
-                Home
+            <Nav  className="m-auto ">
+              <Link className="nav-link" to="/home">
+                <p> Home</p>
               </Link>
               <Link className="nav-link" to="/productos">
-                Productos
+                <p>Productos </p>
               </Link>
-             
-              
+
+
               <Link className="nav-link" to="/carrito">
-                Carrito
+                <p> Carrito</p>
                 {totalCarrito === 0 ? (
                   ""
                 ) : (
@@ -92,7 +96,7 @@ function Navigation() {
                 )}
               </Link>
               <Link className="nav-link" to="/checkout">
-                Comprar
+                <p>Comprar</p>
               </Link>
             </Nav>
 
@@ -101,13 +105,13 @@ function Navigation() {
                 title={
                   <div className="d-inline">
                     <img
-                    src="https://www.citypng.com/public/uploads/preview/-41603940812rethyhget8.png"
+                      src="https://www.citypng.com/public/uploads/preview/-41603940812rethyhget8.png"
                       className="me-2"
                       alt="avatar"
                       style={{ borderRadius: "50%", width: "30px" }}
                     />
                     <span className="text-black">Bienvenido</span>
-                    <span> {currentUser.displayName? currentUser.displayName:currentUser.email}</span>
+                    <span> {currentUser.displayName ? currentUser.displayName : currentUser.email}</span>
                   </div>
                 }
               >
@@ -116,13 +120,13 @@ function Navigation() {
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <Nav>
-                <Link className="nav-link" to="/login">
-                  <Button variant="info">	Iniciar Sesión</Button>
-                </Link>
-                <Link className="nav-link" to="/register">
-                  <Button variant="warning">Regístrese</Button>
-                </Link>
+              <Nav className="d-flex align-items-center">
+                  <Link className="nav-link" to="/login">
+                    <Button variant="info">	Iniciar Sesión</Button>
+                  </Link>
+                  <Link className="nav-link" to="/register">
+                    <Button variant="warning">Regístrese</Button>
+                  </Link>
               </Nav>
             )}
           </Navbar.Collapse>

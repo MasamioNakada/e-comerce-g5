@@ -24,8 +24,8 @@ export default function ProductosListaView() {
   return (
     <>
       
-        <div class="container mb-5 mt-5">
-          <div class="row">
+        <div className="container mb-5 mt-5">
+          <div className="row">
             {productos.map((item, i) => {
               return (
                 <ProductoCard key={i} item={item} />
@@ -40,7 +40,7 @@ export default function ProductosListaView() {
                         setPagina(pagina + 1);
                     }}
                 >
-                   <i class="fas fa-chevron-circle-down"></i>
+                   <i className="fas fa-chevron-circle-down"></i>
                 </button>
                 
             </div>
