@@ -11,7 +11,7 @@ export default function Homeview() {
     }
     return (
         <div>
-            <banner className="position-relative"   >
+{/*             <banner className="position-relative"   >
                 <img
                     id="bannerimage"
                     src={urlbanner.url1}
@@ -22,14 +22,14 @@ export default function Homeview() {
                         <h3>
                             {bannerText.title}
                         </h3>
-                        <h6>
+                        <h5>
                             {bannerText.description}
-                        </h6>
+                        </h5>
                     </figcaption>
                 </Link>
-            </banner>
+            </banner> */}
 
-            <Carousel>
+            <Carousel className="position-relative">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -52,6 +52,16 @@ export default function Homeview() {
                         alt="Third slide"
                     />
                 </Carousel.Item>
+                <Link id="figcaption" className="nav-link" to="/productos">
+                    <figcaption>
+                        <h3>
+                            {bannerText.title}
+                        </h3>
+                        <h6>
+                            {bannerText.description}
+                        </h6>
+                    </figcaption>
+                </Link>
             </Carousel>
 
         </div>

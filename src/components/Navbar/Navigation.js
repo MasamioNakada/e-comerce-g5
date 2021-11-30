@@ -59,7 +59,7 @@ function Navigation() {
         <Container className="justify-content-between">
           <Navbar.Brand>
             <Link className="nav-link text-dark" to="/home">
-              <a>Wiki</a>
+              <a id="brand">Wiki</a>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

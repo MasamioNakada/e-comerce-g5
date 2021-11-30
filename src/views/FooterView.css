@@ -1,13 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
 footer {
-    color: white;
-    background-color: #000;
+
+    background-color: rgb(207, 207, 200);
 }
-ol {
-    padding-right: 32px;
-}
+
 ul {
-    padding-right: 32px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
-h6 {
+
+li {
+    transition: background-color .5s;
+    border-radius: 5px;
     margin-bottom:0px
+}
+
+li:hover {
+    background-color: #91908e;
+}
+
+#pfooter {
+    font-size: 10px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+#pfooter {
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+h6 {
+    font-size: 15px;
+    color: #000;
 }

@@ -8,12 +8,12 @@ p {
     border-radius: 60px;
 }
 
-a {
+#brand {
     transition: background-color .5s;
     border-radius: 60px;
 }
 
-a:hover {
+#brand:hover {
 box-shadow:  35px -35px 100px #cfd3d7,
              -35px 35px 100px #f9fdff;
 }

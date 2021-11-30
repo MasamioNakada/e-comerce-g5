@@ -5,7 +5,8 @@
 
 figcaption {
     position: absolute;
-    bottom: 50%;
+    bottom: 60%;
+    left: 5%;
     color: #fff;
     margin-left: 5%;
     font-size: 2rem; 
@@ -52,7 +53,7 @@ figcaption:hover {
 @media screen and (max-width: 480px) {
     figcaption {
         position: realtive;
-        bottom: 20%;
+        bottom: 30%;
         color: #fff;
         margin-left: 5%;
         font-size: 0.5rem;
